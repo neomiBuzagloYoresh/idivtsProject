@@ -1,0 +1,63 @@
+[
+  {
+    "name": "asfd",
+    "price": 3,
+    "inStock": true,
+    "labels": ["Doll", "Battery Powered", "Baby"],
+    "reviews": ["Good", "Nice", "Fun"],
+    "createdAt": 1647320576076,
+    "_id": "e8qbC"
+  },
+  {
+    "_id": "AhO6H",
+    "name": "shanisd",
+    "price": 0,
+    "createdAt": 1647296277457,
+    "inStock": true,
+    "labels": ["Doll", "Battery Powered", "Baby"],
+    "reviews": ["Good", "Nice", "Fun"]
+  },
+  {
+    "name": "notinstock",
+    "price": 0,
+    "inStock": false,
+    "labels": ["Doll", "Battery Powered", "Baby"],
+    "reviews": ["Good", "Nice", "Fun"],
+    "createdAt": 1647292491394,
+    "_id": "FiBWL"
+  },
+  {
+    "_id": "xoqHt",
+    "name": "tessssss",
+    "price": 0,
+    "inStock": true,
+    "labels": ["Doll", "Battery Powered", "Baby"],
+    "createdAt": 1647291731343
+  },
+  {
+    "_id": "12345",
+    "name": "Applesd1",
+    "price": "1000",
+    "createdAt": 1644116885573,
+    "inStock": true,
+    "labels": ["Doll", "Battery Powered", "Baby"]
+  },
+  {
+    "name": "Dog",
+    "price": "200",
+    "labels": ["Outdoor"],
+    "inStock": true,
+    "reviews": ["Good", "Nice", "Fun"],
+    "_id": "2222",
+    "createdAt": 1647116885573
+  },
+  {
+    "name": "Robot",
+    "price": "100",
+    "labels": ["Doll", "Puzzle"],
+    "inStock": true,
+    "reviews": ["Good", "Nice", "Fun"],
+    "_id": "FANNU",
+    "createdAt": 1647116865382
+  }
+]

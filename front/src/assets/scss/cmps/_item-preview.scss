@@ -1,0 +1,19 @@
+.item-preview {
+  flex: 1 0 25%;
+
+  .item-preview-container {
+    display: flex;
+    width: 71%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 50px rgb(0 0 0 / 50%);
+    transition: 500ms;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.home-page {
+  background-color: black;
+}

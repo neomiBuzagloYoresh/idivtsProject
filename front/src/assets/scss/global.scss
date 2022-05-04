@@ -1,0 +1,43 @@
+//setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+
+// Basics
+@import "basics/typography";
+@import "basics/base";
+@import "basics/layout";
+@import "basics/modals";
+
+// cmps
+@import "cmps/header";
+@import "cmps/footer";
+@import "cmps/item-list";
+@import "cmps/item-preview";
+@import "cmps/type-modal";
+
+.app {
+  min-height: 100vh;
+  position: relative;
+
+  main.container {
+    padding-bottom: 150px;
+  }
+
+  .app-footer {
+    background-color: #222;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.btn-section {
+  text-align: center;
+  margin-top: 30px;
+}
