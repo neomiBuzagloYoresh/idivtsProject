@@ -15,7 +15,7 @@
 @import "cmps/item-list";
 @import "cmps/item-preview";
 @import "cmps/type-modal";
-
+@import "cmps/loader";
 .app {
   min-height: 100vh;
   position: relative;
@@ -37,7 +37,7 @@
   }
 }
 
-.btn-section {
-  text-align: center;
-  margin-top: 30px;
-}
+// .btn-section {
+//   text-align: center;
+//   margin-top: 30px;
+// }

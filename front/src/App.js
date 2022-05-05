@@ -1,5 +1,3 @@
-// import { Redirect } from 'react-router-dom';
-
 import {
   HashRouter as Router,
   Route,
@@ -9,7 +7,8 @@ import {
 import "./assets/scss/global.scss";
 import { AppHeader } from "./cmps/AppHeader.jsx";
 import { AppFooter } from "./cmps/AppFooter";
-import ItemApp from "./pages/ItemApp";
+import { MainAppPage } from "./pages/MainAppPage";
+import { HomePage } from "./pages/HomePage";
 
 function App() {
   return (
@@ -18,7 +17,8 @@ function App() {
         <AppHeader />
         <main className="main-container">
           <Switch>
-            <Route path="/" component={ItemApp} />
+            <Route path="/homePage" component={HomePage} />
+            <Route path="/" component={MainAppPage} />
           </Switch>
         </main>
 

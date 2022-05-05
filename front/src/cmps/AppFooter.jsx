@@ -1,9 +1,9 @@
 import React from "react";
 
-export function AppFooter() {
+export const AppFooter = () => {
   return (
     <div className="app-footer main-layout">
       © My-Footer
     </div>
   );
-}
+};

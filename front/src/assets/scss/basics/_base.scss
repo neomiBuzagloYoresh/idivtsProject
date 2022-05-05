@@ -16,7 +16,7 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(46, 104, 104, 0.45);
+  background-color: rgba(255, 255, 255, 0.45);
 }
 
 img {
@@ -57,22 +57,6 @@ input {
   text-align: inherit;
 }
 
-// MAC like scrollbar
-::-webkit-scrollbar {
-  width: 8px;
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-border-radius: 100px;
-}
-
-::-webkit-scrollbar:hover {
-  background-color: rgba(0, 0, 0, 0.09);
-}
-
-::-webkit-scrollbar-thumb:vertical {
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb:vertical:active {
-  -webkit-border-radius: 100px;
+li {
+  list-style-type: none;
 }

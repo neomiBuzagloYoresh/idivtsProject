@@ -11,6 +11,12 @@
     transition: 500ms;
     align-items: center;
     justify-content: space-around;
+    border-radius: 33px 33px 33px 33px;
+
+    span {
+      color: orange;
+      font-weight: bold;
+    }
   }
 }
 

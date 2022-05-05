@@ -8,7 +8,8 @@ export const AppHeader = () => {
         <h3 className="logo"></h3>
 
         <nav>
-          <NavLink to="/">ItemApp</NavLink>
+          <NavLink to="/">Main-app</NavLink>
+          <NavLink to="/homePage">Home</NavLink>
         </nav>
       </section>
     </header>

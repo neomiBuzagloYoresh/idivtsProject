@@ -1,13 +1,15 @@
 import React, { useEffect, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import ItemList from "../cmps/ItemList";
+import { ItemList } from "../cmps/ItemList";
+import { Loader } from "../cmps/Loader";
+
 import {
   loadItems,
   setCategoryStore,
   setPageStore,
 } from "../store/actions/itemActions";
 
-function ItemApp() {
+export const MainAppPage = () => {
   useEffect(() => {
     dispatch(loadItems());
   }, []);
@@ -31,7 +33,7 @@ function ItemApp() {
     dispatch(loadItems());
   }, []);
 
-  if (!items) return <div>loading...</div>;
+  if (!items) return <Loader />;
 
   return (
     <section className="main-app-container">
@@ -42,6 +44,4 @@ function ItemApp() {
       />
     </section>
   );
-}
-
-export default ItemApp;
+};

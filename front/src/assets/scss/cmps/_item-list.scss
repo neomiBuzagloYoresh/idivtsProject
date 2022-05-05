@@ -1,19 +1,19 @@
 .item-list-main {
-  display: flex;
-  margin-top: rem(70px);
-  flex-direction: column;
-  align-items: center;
-
   img {
     max-width: rem(280px);
     height: rem(280px);
-    object-fit: cover;
+    object-fit: fill;
+    border-radius: 33px 33px 33px 33px;
   }
-  .item-list-container {
-    display: flex;
 
-    flex-wrap: wrap;
-    gap: 30px;
+  .item-list-container {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+    gap: rem(25px);
+    margin-top: rem(55px);
   }
   .pagination-container {
     width: 100%;

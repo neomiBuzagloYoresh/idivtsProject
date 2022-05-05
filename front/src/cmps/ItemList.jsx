@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from "react";
-import TypeModal from "./TypeModal";
-import ItemPreview from "./ItemPreview";
+import { TypeModal } from "./TypeModal";
+import { ItemPreview } from "./ItemPreview";
 import { loadItems } from "../store/actions/itemActions";
+import { Loader } from "./Loader";
 
-function ItemList({ items, setCategory, onSetPage }) {
+export const ItemList = ({
+  items,
+  setCategory,
+  onSetPage,
+}) => {
   const [isShowModal, setIsShowModal] = useState(false);
 
   useEffect(() => {
     loadItems(items);
   }, []);
 
-  if (!items) return <div>loading...</div>;
+  if (!items) return <Loader />;
   return (
     <section className="item-list-main main-layout">
       <button
@@ -38,10 +43,19 @@ function ItemList({ items, setCategory, onSetPage }) {
         ))}
       </ul>
       <div className="pagination-container main-layout">
-        <button onClick={() => onSetPage(-1)}>Prev</button>
-        <button onClick={() => onSetPage(1)}>Next</button>
+        <button
+          className="btn-modal"
+          onClick={() => onSetPage(-1)}
+        >
+          Prev
+        </button>
+        <button
+          className="btn-modal"
+          onClick={() => onSetPage(1)}
+        >
+          Next
+        </button>
       </div>
     </section>
   );
-}
-export default ItemList;
+};

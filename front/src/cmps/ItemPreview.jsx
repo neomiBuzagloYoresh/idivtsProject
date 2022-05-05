@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function ItemPreview({ item }) {
+export const ItemPreview = ({ item }) => {
   const [isSelectItem, setIsSelectItem] = useState(false);
 
   useEffect(() => {}, [isSelectItem]);
@@ -18,10 +18,20 @@ function ItemPreview({ item }) {
             display: !isSelectItem ? "none" : "block",
           }}
         >
-          <p>type: {item.type}</p>
-          <p>views: {item.views}</p>
-          <p>downloads: {item.downloads}</p>
-          <p>collections: {item.collections}</p>
+          <p>
+            {" "}
+            <span>type:</span> {item.type}
+          </p>
+          <p>
+            {" "}
+            <span> views:</span> {item.views}
+          </p>
+          <p>
+            <span>downloads:</span> {item.downloads}
+          </p>
+          <p>
+            <span>collections:</span> {item.collections}
+          </p>
         </div>
       ) : (
         <img
@@ -34,5 +44,4 @@ function ItemPreview({ item }) {
       )}
     </div>
   );
-}
-export default ItemPreview;
+};

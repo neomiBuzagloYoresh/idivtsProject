@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-function TypeModal({ items, setCategory }) {
+export const TypeModal = ({ setCategory }) => {
   const catagories = [
     "animals",
     "numbers",
@@ -36,11 +36,4 @@ function TypeModal({ items, setCategory }) {
       </div>
     </section>
   );
-}
-
-export default TypeModal;
-
-// useEffect(async () => {
-//   await itemService.loadItems(type);
-//   // close the modal!
-// }, [type])
+};
