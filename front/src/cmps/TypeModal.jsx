@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TypeModal = ({ setCategory }) => {
+export const TypeModal = ({ setCategory, closeModal }) => {
   const catagories = [
     "animals",
     "numbers",
@@ -18,6 +18,10 @@ export const TypeModal = ({ setCategory }) => {
     "music",
     "cools",
   ];
+  function emitModal(category) {
+    closeModal();
+    setCategory(category);
+  }
 
   return (
     <section className="type-modal-container">
@@ -26,7 +30,7 @@ export const TypeModal = ({ setCategory }) => {
           return (
             <button
               key={category}
-              onClick={() => setCategory(category)}
+              onClick={() => emitModal(category)}
               className="btn-type"
             >
               {category}

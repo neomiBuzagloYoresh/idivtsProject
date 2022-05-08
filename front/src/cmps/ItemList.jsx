@@ -8,12 +8,17 @@ export const ItemList = ({
   items,
   setCategory,
   onSetPage,
+  closeModal,
 }) => {
   const [isShowModal, setIsShowModal] = useState(false);
 
   useEffect(() => {
     loadItems(items);
   }, []);
+
+  function closeModal() {
+    setIsShowModal(false);
+  }
 
   if (!items) return <Loader />;
   return (
@@ -30,6 +35,7 @@ export const ItemList = ({
         <div className="type-modal">
           <TypeModal
             setCategory={setCategory}
+            closeModal={closeModal}
             items={items}
           />
         </div>

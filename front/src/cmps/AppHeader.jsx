@@ -9,7 +9,6 @@ export const AppHeader = () => {
 
         <nav>
           <NavLink to="/">Main-app</NavLink>
-          <NavLink to="/homePage">Home</NavLink>
         </nav>
       </section>
     </header>

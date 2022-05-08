@@ -8,7 +8,6 @@ import "./assets/scss/global.scss";
 import { AppHeader } from "./cmps/AppHeader.jsx";
 import { AppFooter } from "./cmps/AppFooter";
 import { MainAppPage } from "./pages/MainAppPage";
-import { HomePage } from "./pages/HomePage";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <AppHeader />
         <main className="main-container">
           <Switch>
-            <Route path="/homePage" component={HomePage} />
             <Route path="/" component={MainAppPage} />
           </Switch>
         </main>
